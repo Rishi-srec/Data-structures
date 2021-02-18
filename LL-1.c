@@ -20,6 +20,15 @@ void append(struct node **q,int d)
         temp->link = nn;
     }
 }
+void display(struct node *ha)
+{
+    while(ha != NULL)
+    {
+        printf("%d ",ha->data);
+        ha = ha->link;
+    }
+}
+
 int main()
 {
     int N,val;
